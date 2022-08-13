@@ -8,7 +8,14 @@
     scroll-behavior: smooth;
     align-items: center;
     transition: all 0.3s ease;
+    
 
+}
+
+p {
+    line-height: 2rem;
+    word-spacing: 5px;
+    padding: 20px;
 }
 
 .logo {
@@ -30,28 +37,28 @@
 .logo_heading {
     padding-top: 1rem;
     padding-left: 1rem;
-    font-style: italic;
     font-weight: 700;
+    
 }
 
 .navbar {
     opacity: 0.9;
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
     width: 100%;
     font-size: 1.2rem;
     z-index: 999;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
+    
 
 }
 
 .navbar_container {
-    top: 100px;
-    height: 100px;
     width: 100%;
     justify-content: space-between;
-    margin: 0 auto 0 0;
+    margin: 0 auto 10px 0;
 }
 
 .navbar_list {
@@ -63,7 +70,7 @@
 }
 
 .navbar_list_item {
-    margin: 0 1rem;
+    margin: auto 15px auto 0;
     display: block;
     color: #041e41;
     text-decoration: none;
@@ -89,7 +96,7 @@
     border: none;
     padding: 1rem;
     width: fit-content;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .todays_data:hover {
@@ -97,7 +104,7 @@
     color: #e3b43d;
     background-color: #ffffff;
     font-size: larger;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 
 }
 
@@ -139,9 +146,65 @@
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
   @media screen and (max-width: 690px) {
     div.hero_text_container {
+      font-size: 20px;
+    }
+  }
+
+
+
+
+
+  @media screen and (min-width: 691px) {
+    h1.logo_heading {
       font-size: 30px;
     }
   }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 690px) {
+    h1.logo_heading  {
+      font-size: 25px;
+    }
+  }
+
+
+
+
+
+  @media screen and (min-width: 691px) {
+    a.navbar_list_item {
+      font-size: 20px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 690px) {
+    a.navbar_list_item {
+      font-size: 20px;
+    }
+  }
+
+
+
+
+
+
+
+  @media screen and (min-width: 691px) {
+    p {
+      font-size: 25px;
+      
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 690px) {
+    p {
+      font-size: 20px;
+
+    }
+  }
+
 
 /* #top_line {
 
@@ -187,10 +250,10 @@
 }
 
 .first_separator {
-    height: 600px;
+    
     background-color: #041e41;
     text-align: center;
-
+    
 }
 
 .first_separator_title {
@@ -201,10 +264,10 @@
 }
 
 .welcome_container {
-    margin: 10%;
+    margin: 0;
     line-height: 2rem;
     word-spacing: 5px;
-    padding: 10px;
+    padding: 20px;
     font-size: larger;
     color: #ffffff;
 }
@@ -226,7 +289,7 @@
     color: #000000;
     padding: 10px;
     background-color: white;
-    width: 60%;
+    
     line-height: 2rem;
     word-spacing: 5px;
     margin: 0 auto;
@@ -236,17 +299,13 @@
 
     text-align: center;
     width: 100%;
-    margin: auto;
+    
 
 }
 
 .photos {
-
-    opacity: 0.9;
-    width: 50%;
-    margin:  20px auto;
-
-
+    
+    width: 100%;
 }
 
 .slogan_container {
@@ -254,7 +313,7 @@
     background-color: #e3b43d;
     padding: 1% 1%;
     margin: auto;
-    width: 50%;
+    
     height: 90%;
     transition: all 0.3s ease;
     text-align: center;
@@ -265,7 +324,6 @@
 .slogan_container:hover {
 
     background-color: #041e41;
-    width: 100%;
     color: #e3b43d;
 
 }
@@ -278,12 +336,7 @@
     
 }
 
-
-
-
 .third_body {
-
-    height: 25rem;
     background-color:#e3b43d;
 
 }
@@ -291,19 +344,16 @@
 .third_body_container {
 
     margin: auto;
-    
+    padding: 0 0 100px 0;
 
 }
 
 
 .third_body_text {
-    font-size: larger;
     text-align: center;
     color: #ffffff;
-    padding: 10px;
-    width: 60%;
-    line-height: 2rem;
-    word-spacing: 5px;
+    padding: 10% auto;
+
     margin: 0 auto;
     
 }
